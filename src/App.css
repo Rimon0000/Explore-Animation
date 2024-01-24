@@ -1,24 +1,24 @@
-.main{
+/* .main{
   border: 2px solid black;
   display: flex;
   flex-direction: column;
   /* gap: 10px; */
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 10px; */
   /* overflow: hidden; */
   /* position: relative; */
-  perspective: 500px;
-}
+  /* perspective: 500px; */
+} */
 
-.box-1{
-  /* position: absolute; */
+/* .box-1{
+  position: absolute;
   background-color: red;
   height: 150px;
   width: 150px;
   transition-duration: 1000ms;
   transition-timing-function: ease;
-}
+} */
 
 /* .box-2{
 //  position: absolute;
@@ -47,3 +47,44 @@
   transform: skew(45deg, 30deg);
 } */
 
+
+
+.btn{
+  border: 2px solid tomato;
+  color: tomato;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  /* transform: translate(100px); */
+  /* transform: rotate(120deg); */
+  transform: scaleY(0);
+  z-index: -1;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  color: white;
+}
+
+.btn:hover::after{
+  /* transform: translate(0px); */
+  /* transform: rotate(0); */
+  transform: scaleY(1);
+  background-color: tomato;
+}
