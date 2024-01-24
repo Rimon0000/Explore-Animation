@@ -1,5 +1,7 @@
 import './App.css'
 import "./Button/Button.css"
+import "./Button/animation-recap.css"
+import "./Button/loading-animation.css"
 
 function App() {
 
@@ -13,7 +15,15 @@ function App() {
 
       {/* <button className='btn'>Hover me</button> */}
 
-      <div className='box'></div>
+      {/* <div className='box'></div> */}
+
+
+      <div className='loading'>
+        <div className='glass'></div>
+        <div className='box-3'></div>
+      </div>
+
+
     </div>
   )
 }
