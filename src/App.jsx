@@ -1,7 +1,8 @@
-import './App.css'
-import "./Button/Button.css"
-import "./Button/animation-recap.css"
-import "./Button/loading-animation.css"
+// import './App.css'
+// import "./Button/Button.css"
+// import "./Button/animation-recap.css"
+// import "./Button/loading-animation.css"
+import "./Button/clip-path-transition.css"
 
 function App() {
 
@@ -18,11 +19,18 @@ function App() {
       {/* <div className='box'></div> */}
 
 
-      <div className='loading'>
+      {/* <div className='loading'>
         <div className='glass'></div>
         <div className='box-3'></div>
-      </div>
+      </div> */}
 
+      <div className='main-2'>
+        <div className='card'>
+          <h1>Heading</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem eum 
+            quae eius expedita officiis natus doloremque error autem dignissimos eaque!</p>
+        </div>
+      </div>
 
     </div>
   )
